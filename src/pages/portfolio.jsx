@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import My from '../components/my';
 import luvScriptStudioSquare from '../images/luvscriptstudio_square.jpg';
 
 const PortfolioPage = () => (
@@ -40,6 +41,7 @@ const PortfolioPage = () => (
         </div>
       </div>
     </section>
+    <My />
   </Layout>
 );
 

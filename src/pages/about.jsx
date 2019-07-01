@@ -4,6 +4,8 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import My from '../components/my';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="About" />
@@ -14,16 +16,10 @@ const IndexPage = () => (
           <span>#me</span>
           ,
           {' '}
-          <span>
-            #myself
-            <span role="img" aria-label="Star">⭐</span>
-          </span>
+          <span>#myself</span>
           ,
           {' '}
-          <span>
-            #I
-            <span role="img" aria-label="Fire">🔥</span>
-          </span>
+          <span>#I</span>
         </p>
         <div className="columns">
           <div className="column is-8">
@@ -54,6 +50,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+    <My />
   </Layout>
 );
 
