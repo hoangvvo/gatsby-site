@@ -4,8 +4,21 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+// Hide scrollbar
+::-webkit-scrollbar {
+  width: 0px;
+  }
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// Custom css
+
 .has-background-transparent {
   background-color: transparent;
+}
+.hv-mt-3 {
+  margin-top: 3rem;
 }
 .hv-navbar {
   position: absolute;
@@ -17,4 +30,81 @@
 .hv-intro-title {
   font-weight: lighter;
   line-height: 1.375;
+}
+.hv-section-title {
+  font-size: 9vw;
+  font-weight: bolder;
+}
+.hv-section-subtitle-hashtags {
+  color: $grey-lighter;
+  font-size: 1.5rem;
+  -webkit-transition: opacity 450ms ease;
+  span {
+    cursor: pointer;
+    opacity: .5;
+    font-weight: bold;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.hv-section-card {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+// Portfolio
+.hv-section-portfolio {
+  font-family: $family-monospace;
+  margin-top: 3rem;
+  columns {
+    margin-top: 2rem;
+  }
+  .hv-section-portfolio-item {
+    -webkit-transition: opacity 450ms ease;
+    opacity: .5;
+    .hv-portfolio-title {
+      font-size: 4rem;
+    }
+    .hv-portfolio-desc {
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// About
+.hv-about-content {
+  p {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+// hv-animate for animation
+
+.hv-animate-underline {
+  cursor: pointer;
+  background-image: linear-gradient(120deg, $primary 0%, #FA709A 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 18%;
+  }
+}
+
+.hv-animate-text-stroke {
+  -webkit-text-stroke: .02rem #eee;
+  color: transparent;
+  -webkit-transition: color 450ms ease;
+  &:hover {
+    color: #eee;
+  }
 }
