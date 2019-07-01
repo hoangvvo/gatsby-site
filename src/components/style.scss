@@ -1,0 +1,20 @@
+// Importing variables
+@import './variables.scss';
+
+// Importing Bulma from node_modules
+@import '~bulma/bulma.sass';
+
+.has-background-transparent {
+  background-color: transparent;
+}
+.hv-navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.hv-intro-title {
+  font-weight: lighter;
+  line-height: 1.375;
+}
