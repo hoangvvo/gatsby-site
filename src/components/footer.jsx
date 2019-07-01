@@ -4,7 +4,7 @@ import React from 'react';
 import './style.scss';
 
 const Footer = () => (
-  <footer className="footer has-background-black-ter has-text-grey-lighter">
+  <footer className="footer has-background-transparent has-text-grey-lighter">
     <div className="content has-text-centered">
       <p>
         Proudly powered by
