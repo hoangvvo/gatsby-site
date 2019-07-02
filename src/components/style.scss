@@ -58,7 +58,6 @@
 // Portfolio
 .hv-section-portfolio {
   font-family: $family-monospace;
-  margin-top: 3rem;
   columns {
     margin-top: 2rem;
   }
@@ -90,6 +89,83 @@
     }
   }
 }
+
+// Blog
+.hv-blog-posts {
+
+}
+.hv-blog-post {
+  transition: opacity 450ms ease;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+.hv-blog-post-head {
+  margin: .5rem;
+}
+.hv-blog-post-category {
+  display: inline-block;
+  margin-right: 5px;
+}
+.hv-blog-post-category span {
+  background: $title-color;
+  color: #000;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: .6rem;
+
+}
+.hv-blog-post-title {
+  display: inline;
+  color: $title-color;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.hv-blog-post-description {
+  color: $subtitle-color;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: .8;
+  margin: .5rem;
+}
+// Blog Post
+.hv-post-header {
+  position: relative;
+  min-height: 100vh;
+}
+.hv-post-head {
+  z-index: 9;
+  position: absolute;
+  bottom: 6rem;
+  width: 100%;
+}
+.hv-post-category span:before {
+  content: '#'
+}
+.hv-post-meta {
+  display: flex;
+}
+.hv-post-meta-detail {
+  margin-left: 12px;
+}
+.hv-post-image {
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  z-index: 1;
+  filter: grayscale(100%);
+  opacity: .5;
+  transition: opacity 450ms ease;
+}
+.hv-post-content {
+  line-height: 2;
+}
+
+
 
 // hv-animate for animation
 
