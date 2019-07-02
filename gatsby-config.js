@@ -15,6 +15,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.hoangvvo.com',
+        sitemap: 'https://www.hoangvvo.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -29,7 +37,39 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images-contentful',
+            options: {
+              maxWidth: 800,
+              quality: 80,
+              withWebp: true,
+            },
+          },
+          'gatsby-remark-external-links',
+        ],
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        // Setting a color is optional.
+        color: '#ffc107',
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'rgbpfpd0hrww',
+        accessToken: 'ruHAzGZCjaSmZMK9LSMHiI_TvNrGWoAIrgIwAszRxLQ',
+      },
+    },
   ],
 };
