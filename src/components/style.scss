@@ -38,7 +38,7 @@
 .hv-section-subtitle-hashtags {
   color: $grey-lighter;
   font-size: 1.5rem;
-  -webkit-transition: opacity 450ms ease;
+  transition: opacity 450ms ease;
   span {
     cursor: pointer;
     opacity: .5;
@@ -63,7 +63,7 @@
     margin-top: 2rem;
   }
   .hv-section-portfolio-item {
-    -webkit-transition: opacity 450ms ease;
+    transition: opacity 450ms ease;
     opacity: .5;
     .hv-portfolio-title {
       font-size: 4rem;
@@ -83,6 +83,11 @@
   p {
     font-size: 2rem;
     line-height: 2;
+    opacity: .5;
+    transition: opacity 450ms ease;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -103,7 +108,7 @@
 .hv-animate-text-stroke {
   -webkit-text-stroke: .02rem #eee;
   color: transparent;
-  -webkit-transition: color 450ms ease;
+  transition: color 450ms ease;
   &:hover {
     color: #eee;
   }
