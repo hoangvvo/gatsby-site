@@ -39,7 +39,7 @@ const AboutPage = () => (
                 , and a
                 {' '}
                 <b>good friend</b>
-                . Currently a high school junior, I’m on my task to explore myself.
+                . Currently a high school senior, I’m on my way to explore myself.
               </p>
               <blockquote>
                 <p>“Sometimes life’s going to hit you in the head with a brick. Don’t lose faith. I’m convinced that the only thing that kept me going was that I loved what I did.”</p>
