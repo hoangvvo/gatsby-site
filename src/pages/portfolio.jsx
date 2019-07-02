@@ -8,7 +8,7 @@ import luvScriptStudioSquare from '../images/luvscriptstudio_square.jpg';
 
 const PortfolioPage = () => (
   <Layout>
-    <SEO title="Portfolio" />
+    <SEO title="Portfolio" description="I have been enjoying working on different projects during the past years to polish my skills in different fields. Check out my work!" />
     <section className="section hv-mt-3">
       <div className="container">
         <h1 className="title hv-section-title hv-animate-text-stroke">Portfolio</h1>

@@ -6,9 +6,9 @@ import SEO from '../components/seo';
 
 import My from '../components/my';
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities." />
     <section className="section hv-mt-3">
       <div className="container">
         <h1 className="title hv-section-title hv-animate-text-stroke">About me</h1>
@@ -54,4 +54,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default AboutPage;

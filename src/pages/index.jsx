@@ -7,7 +7,7 @@ import My from '../components/my';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description="Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!" />
     <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
