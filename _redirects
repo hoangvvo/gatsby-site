@@ -1,0 +1,3 @@
+
+# Netlify Redirects
+http://hoangvvo.netlify.com/* http://www.hoangvvo.com/:splat 301!
