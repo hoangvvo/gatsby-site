@@ -117,7 +117,7 @@
 }
 .hv-blog-post-category span {
   background: $title-color;
-  color: #000;
+  color: $body-background-color;
   border-radius: 10px;
   padding: 3px;
   font-size: .6rem;
@@ -170,6 +170,7 @@
 }
 .hv-post-content {
   line-height: 2;
+  opacity: .8;
 }
 
 
@@ -189,10 +190,10 @@
 }
 
 .hv-animate-text-stroke {
-  -webkit-text-stroke: .02rem #eee;
+  -webkit-text-stroke: .02rem $title-color;
   color: transparent;
   transition: color 450ms ease;
   &:hover {
-    color: #eee;
+    color: $title-color;
   }
 }
