@@ -4,21 +4,22 @@ import React from 'react';
 import './style.scss';
 
 const Footer = () => (
-  <footer className="footer has-background-transparent has-text-grey-lighter">
+  <footer className="footer has-background-transparent has-text-grey-light">
     <div className="content has-text-centered">
-      <p>
-        Proudly powered by
+      <p className="is-italic">
+        Made with
         {' '}
-        <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">GatsbyJS</a>
+        <span role="img" aria-label="Love">❤️</span>
+        ,
         {' '}
-and
-        {' '}
-        <a href="https://bulma.io/" target="_blank" rel="noreferrer noopener">BulmaCSS</a>
-. Designed and coded with ❤ by
+        <span role="img" aria-label="Fire">🔥</span>
+        , and a keyboard.
+      </p>
+      <small>
+        © 2017
         {' '}
         <Link to="/">Hoang Vo</Link>
-.
-      </p>
+      </small>
     </div>
   </footer>
 );
