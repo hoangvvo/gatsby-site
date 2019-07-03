@@ -12,6 +12,13 @@
   background: transparent;
 }
 
+// italic caption after image (need rework)
+.gatsby-resp-image-link + em {
+  display: block;
+  text-align: center;
+  opacity: .7;
+}
+
 // Custom css
 
 .has-background-transparent {
