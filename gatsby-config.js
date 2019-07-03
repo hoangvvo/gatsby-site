@@ -78,5 +78,6 @@ module.exports = {
         accessToken: 'ruHAzGZCjaSmZMK9LSMHiI_TvNrGWoAIrgIwAszRxLQ',
       },
     },
+    'gatsby-plugin-force-trailing-slashes',
   ],
 };
