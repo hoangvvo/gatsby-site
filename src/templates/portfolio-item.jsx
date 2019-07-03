@@ -10,7 +10,7 @@ const PortfolioItem = ({
     </div>
     <div className="column is-8 content">
       <h4 className="title hv-portfolio-title is-1" style={{ color }}>{name}</h4>
-      <p className="has-text-grey-light hv-portfolio-desc">{description}</p>
+      <p className="hv-portfolio-desc">{description}</p>
       <a href={link} style={{ backgroundColor: color }} className="button is-fullwidth is-rounded is-primary" target="_blank" rel="noreferrer noopener">{linkTitle}</a>
     </div>
   </div>
