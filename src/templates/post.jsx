@@ -12,7 +12,7 @@ const PostTemplate = ({ data }) => {
   } = data.contentfulBlogPost;
   return (
     <Layout>
-      <SEO title={title} description={description.description} />
+      <SEO title={title} description={description.description} type="article" />
       <article>
         <header className="hv-post-header">
           <Img className="hv-post-image" alt={title} fluid={image.fluid} />

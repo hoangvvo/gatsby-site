@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
-  description, lang, meta, title,
+  description, lang, meta, title, type,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -51,7 +51,7 @@ function SEO({
         },
         {
           property: 'og:type',
-          content: 'website',
+          content: type,
         },
         {
           name: 'twitter:card',
@@ -78,6 +78,7 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
+  type: 'website',
 };
 
 SEO.propTypes = {
@@ -85,6 +86,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  type: PropTypes.string,
 };
 
 export default SEO;
