@@ -16,17 +16,9 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://www.hoangvvo.com',
-        sitemap: 'https://www.hoangvvo.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://www.hoangvvo.com',
+        siteUrl: 'https://www.hoangvvo.com/',
         stripQueryString: true,
       },
     },
@@ -78,6 +70,5 @@ module.exports = {
         accessToken: 'ruHAzGZCjaSmZMK9LSMHiI_TvNrGWoAIrgIwAszRxLQ',
       },
     },
-    'gatsby-plugin-force-trailing-slashes',
   ],
 };
