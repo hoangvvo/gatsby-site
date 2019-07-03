@@ -12,7 +12,7 @@ const PostTemplate = ({ data }) => {
   } = data.contentfulBlogPost;
   return (
     <Layout>
-      <SEO title={title} description={description.description} type="article" />
+      <SEO title={title} description={description.description} type="article" image={image.file.url} />
       <article>
         <header className="hv-post-header">
           <Img className="hv-post-image" alt={title} fluid={image.fluid} />
@@ -76,6 +76,9 @@ export const pageQuery = graphql`
         }
       }
       image {
+        file {
+          url
+        }
         fluid(maxWidth: 1280) {
           ...GatsbyContentfulFluid_withWebp
         }
