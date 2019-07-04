@@ -1,6 +1,6 @@
 
 # Netlify Redirects
-http://hoangvvo.netlify.com/* http://www.hoangvvo.com/:splat 301!
+https://hoangvvo.netlify.com/* https://www.hoangvvo.com/:splat 301!
 
 # Old Wordpress Redirects
 /project/knowledge-seed/ /blog/knowledge-seed-learning-while-playing-games/ 301
