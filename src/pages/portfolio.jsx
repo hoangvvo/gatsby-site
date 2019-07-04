@@ -46,7 +46,7 @@ export const query = graphql`
   query PortfolioPageQuery {
     luvScriptStudioImage: file(relativePath: { eq: "luvscriptstudio_square.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 768) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
