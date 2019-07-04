@@ -63,6 +63,7 @@ module.exports = {
         showSpinner: false,
       },
     },
+    'gatsby-plugin-no-sourcemaps',
     {
       resolve: 'gatsby-source-contentful',
       options: {
