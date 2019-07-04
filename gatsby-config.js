@@ -24,6 +24,7 @@ module.exports = {
         stripQueryString: true,
       },
     },
+    'gatsby-plugin-robots-txt',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
