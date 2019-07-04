@@ -2,7 +2,7 @@
   "name": "hoangvvo-gatsby-site",
   "private": true,
   "description": "Gatsby powered personal website at hoangvvo.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Hoang Vo",
   "dependencies": {
     "bulma": "^0.7.5",
