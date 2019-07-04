@@ -20,7 +20,7 @@ const BlogPage = ({ data }) => {
           <div className="hv-blog-posts hv-mt-3">
             <div className="columns is-multiline">
               {blogPosts.map(({ node: post }) => (
-                <div className="hv-blog-post column is-4-tablet is-3-fullhd" key={post.id}>
+                <div className="hv-blog-post column is-6-tablet is-4-desktop" key={post.id}>
                   <Link to={`/blog/${post.slug}/`}>
                     <div>
                       <figure className="image">
