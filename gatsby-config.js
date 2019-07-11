@@ -50,6 +50,12 @@ module.exports = {
               withWebp: true,
             },
           },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: true,
+            },
+          },
           'gatsby-remark-external-links',
         ],
       },
