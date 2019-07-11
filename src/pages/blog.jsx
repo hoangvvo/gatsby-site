@@ -17,6 +17,21 @@ const BlogPage = ({ data }) => {
       <section className="section hv-mt-3">
         <div className="container">
           <h1 className="title hv-section-title hv-animate-text-stroke">Blog</h1>
+          <p className="hv-section-subtitle-hashtags">
+            <span>#thought</span>
+            ,
+            {' '}
+            <span>
+              #express
+              <span role="img" aria-label="Star">⭐</span>
+            </span>
+            ,
+            {' '}
+            <span>
+              #word
+              <span role="img" aria-label="Fire">🔥</span>
+            </span>
+          </p>
           <div className="hv-blog-posts hv-mt-3">
             <div className="columns is-multiline">
               {blogPosts.map(({ node: post }) => (
