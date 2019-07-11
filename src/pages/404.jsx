@@ -11,10 +11,16 @@ const NotFoundPage = () => (
     <section className="hero is-medium has-background-black-bis">
       <div className="hero-body has-text-centered">
         <div className="container">
-          <img alt="Not found" src={notFoundSvg} style={{ maxWidth: '100%', maxHeight: '40vh', marginBottom: '2rem' }} />
-          <h1 className="title">
-          404 NOT FOUND
-          </h1>
+          <img
+            alt="Not found"
+            src={notFoundSvg}
+            style={{
+              maxWidth: '100%',
+              maxHeight: '40vh',
+              marginBottom: '2rem',
+            }}
+          />
+          <h1 className="title">404 NOT FOUND</h1>
           <h2 className="subtitle">
             This page does not exist... just like my girlfriend.
           </h2>

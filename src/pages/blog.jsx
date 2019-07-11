@@ -13,29 +13,41 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Blog" description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities." />
+      <SEO
+        title="Blog"
+        description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities."
+      />
       <section className="section hv-mt-3">
         <div className="container">
-          <h1 className="title hv-section-title hv-animate-text-stroke">Blog</h1>
+          <h1 className="title hv-section-title hv-animate-text-stroke">
+            Blog
+          </h1>
           <p className="hv-section-subtitle-hashtags">
             <span>#thought</span>
             ,
             {' '}
             <span>
               #express
-              <span role="img" aria-label="Star">⭐</span>
+              <span role="img" aria-label="Star">
+                ⭐
+              </span>
             </span>
             ,
             {' '}
             <span>
               #word
-              <span role="img" aria-label="Fire">🔥</span>
+              <span role="img" aria-label="Fire">
+                🔥
+              </span>
             </span>
           </p>
           <div className="hv-blog-posts hv-mt-3">
             <div className="columns is-multiline">
               {blogPosts.map(({ node: post }) => (
-                <div className="hv-blog-post column is-6-tablet is-4-desktop" key={post.id}>
+                <div
+                  className="hv-blog-post column is-6-tablet is-4-desktop"
+                  key={post.id}
+                >
                   <Link to={`/blog/${post.slug}/`}>
                     <div>
                       <figure className="image">
@@ -45,13 +57,15 @@ const BlogPage = ({ data }) => {
                     <div>
                       <div className="hv-blog-post-head">
                         <div className="hv-blog-post-category">
-                          {
-                            post.category.map(cate => (<span key={cate.id}>{cate.name}</span>))
-                          }
+                          {post.category.map(cate => (
+                            <span key={cate.id}>{cate.name}</span>
+                          ))}
                         </div>
                         <h3 className="hv-blog-post-title">{post.title}</h3>
                       </div>
-                      <p className="hv-blog-post-description">{post.description.description}</p>
+                      <p className="hv-blog-post-description">
+                        {post.description.description}
+                      </p>
                     </div>
                   </Link>
                 </div>

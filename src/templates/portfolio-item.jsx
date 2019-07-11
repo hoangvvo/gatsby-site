@@ -3,18 +3,36 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const PortfolioItem = ({
-  name, description, color, link, linkTitle, imageFluid, image,
+  name,
+  description,
+  color,
+  link,
+  linkTitle,
+  imageFluid,
+  image,
 }) => (
   <div className="columns hv-section-portfolio-item">
     <div className="column is-4">
-      { (imageFluid !== undefined)
-        ? (<Img fluid={imageFluid} alt={name} />)
-        : (<img src={image} alt={name} />) }
+      {imageFluid !== undefined ? (
+        <Img fluid={imageFluid} alt={name} />
+      ) : (
+        <img src={image} alt={name} />
+      )}
     </div>
     <div className="column is-8 content">
-      <h4 className="title hv-portfolio-title is-1" style={{ color }}>{name}</h4>
+      <h4 className="title hv-portfolio-title is-1" style={{ color }}>
+        {name}
+      </h4>
       <p className="hv-portfolio-desc">{description}</p>
-      <a href={link} style={{ backgroundColor: color }} className="button is-fullwidth is-rounded is-primary" target="_blank" rel="noreferrer noopener">{linkTitle}</a>
+      <a
+        href={link}
+        style={{ backgroundColor: color }}
+        className="button is-fullwidth is-rounded is-primary"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {linkTitle}
+      </a>
     </div>
   </div>
 );
@@ -26,7 +44,6 @@ PortfolioItem.defaultProps = {
   link: '#',
   linkTitle: PortfolioItem.name,
   imageFluid: undefined,
-
 };
 
 PortfolioItem.propTypes = {

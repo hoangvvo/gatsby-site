@@ -9,10 +9,14 @@ const Footer = () => (
       <p className="is-italic">
         Made with
         {' '}
-        <span role="img" aria-label="Love">❤️</span>
+        <span role="img" aria-label="Love">
+          ❤️
+        </span>
         ,
         {' '}
-        <span role="img" aria-label="Fire">🔥</span>
+        <span role="img" aria-label="Fire">
+          🔥
+        </span>
         , and a keyboard.
       </p>
       <small>
