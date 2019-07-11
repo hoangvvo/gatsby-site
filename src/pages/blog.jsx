@@ -28,17 +28,11 @@ const BlogPage = ({ data }) => {
             {' '}
             <span>
               #express
-              <span role="img" aria-label="Star">
-                ⭐
-              </span>
             </span>
             ,
             {' '}
             <span>
               #word
-              <span role="img" aria-label="Fire">
-                🔥
-              </span>
             </span>
           </p>
           <div className="hv-blog-posts hv-mt-3">
