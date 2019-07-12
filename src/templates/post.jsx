@@ -6,6 +6,8 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import My from '../components/my';
+
 const PostTemplate = ({ data }) => {
   const {
     title,
@@ -85,6 +87,7 @@ const PostTemplate = ({ data }) => {
           </div>
         </section>
       </article>
+      <My />
     </Layout>
   );
 };
