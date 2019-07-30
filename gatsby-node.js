@@ -14,6 +14,14 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allContentfulPortfolio {
+          edges {
+            node {
+              id
+              slug
+            }
+          }
+        }
       }
     `,
   ).then((result) => {
@@ -21,7 +29,6 @@ exports.createPages = ({ graphql, actions }) => {
       throw new Error(result.errors);
     }
     const blogPostTemplate = path.resolve('./src/templates/post.jsx');
-
     result.data.allContentfulBlogPost.edges.forEach((edge) => {
       createPage({
         path: `/blog/${edge.node.slug}/`,
