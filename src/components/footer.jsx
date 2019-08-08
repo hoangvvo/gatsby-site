@@ -1,8 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-import './style.scss';
-
 const Footer = () => (
   <footer className="footer has-background-transparent">
     <div className="content has-text-centered">

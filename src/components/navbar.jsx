@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './style.scss';
 import hoangvvoLogo from '../images/hoangvvo-logo.png';
 
 const Navbar = ({ siteTitle }) => (
