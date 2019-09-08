@@ -50,6 +50,7 @@ module.exports = {
               withWebp: true,
             },
           },
+          'gatsby-remark-autolink-headers',
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
