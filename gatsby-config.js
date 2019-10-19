@@ -72,6 +72,14 @@ module.exports = {
         showSpinner: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: true,
+        develop: true,
+        ignore: ['prism-atom-dark.css'],
+      },
+    },
     'gatsby-plugin-no-sourcemaps',
     {
       resolve: 'gatsby-source-contentful',

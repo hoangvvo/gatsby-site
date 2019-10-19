@@ -4,6 +4,10 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+// Import theme for prism
+@import './prism-atom-dark.css';
+
+
 // italic caption after image (need rework)
 .gatsby-resp-image-link + em {
   display: block;
