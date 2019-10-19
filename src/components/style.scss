@@ -4,14 +4,6 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
-// Hide scrollbar
-::-webkit-scrollbar {
-  width: 0px;
-  }
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 // italic caption after image (need rework)
 .gatsby-resp-image-link + em {
   display: block;
@@ -20,6 +12,18 @@
 }
 
 // Custom css
+html {
+  scrollbar-color: $primary;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  background: #292929;
+  width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: $link;
+}
 
 .has-background-transparent {
   background-color: transparent;
@@ -98,9 +102,6 @@
 }
 
 // Blog
-.hv-blog-posts {
-
-}
 .hv-blog-post {
   transition: opacity 450ms ease;
   opacity: .8;
