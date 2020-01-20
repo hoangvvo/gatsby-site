@@ -1,18 +1,3 @@
-.gatsby-highlight .tag:not(body) {
-  align-items: unset;
-  background-color: unset;
-  border-radius: unset;
-  color: unset;
-  display: unset;
-  font-size: unset;
-  height: unset;
-  justify-content: unset;
-  line-height: unset;
-  padding-left: unset;
-  padding-right: unset;
-  white-space: unset;
-}
-
 pre[class*="language-"].line-numbers {
   position: relative;
 }
