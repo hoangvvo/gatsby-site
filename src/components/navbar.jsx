@@ -5,12 +5,10 @@ const Navbar = () => (
   <nav
     role="navigation"
     aria-label="main navigation"
-    className="fixed py-12 w-full z-40 h-20 p-2"
-    style={{
-      backdropFilter: 'blur(2px)'
-    }}
+    className="fixed py-12 w-full z-40 px-2"
+    style={{ backdropFilter: 'blur(2px)', backgroundColor: 'rgba(0,0,0,.4)' }}
   >
-    <div className="container mx-auto flex justify-between items-center">
+    <div className="container mx-auto flex flex-wrap justify-between items-center">
       <div className="flex content-start">
         <Link to="/">
           <div className="text-lg text-accents-700 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
@@ -27,7 +25,7 @@ const Navbar = () => (
           Blog
         </Link>
         <Link
-          className="ml-2 text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
+          className="ml-4 text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
           to="/portfolio/"
         >
           Portfolio
