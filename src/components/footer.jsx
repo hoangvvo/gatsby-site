@@ -2,9 +2,8 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Footer = () => (
-  <footer className="footer has-background-transparent">
-    <div className="content has-text-centered">
-      <p className="is-italic">
+  <footer className="text-accents-600 container mx-auto py-16 text-center">
+      <p>
         Made with
         {' '}
         <span role="img" aria-label="Love">
@@ -22,7 +21,6 @@ const Footer = () => (
         {' '}
         <Link to="/">Hoang Vo</Link>
       </small>
-    </div>
   </footer>
 );
 

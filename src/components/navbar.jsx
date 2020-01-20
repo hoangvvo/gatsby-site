@@ -1,41 +1,40 @@
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-import hoangvvoLogo from '../images/hoangvvo-logo.png';
-
-const Navbar = ({ siteTitle }) => (
+const Navbar = () => (
   <nav
-    className="navbar hv-navbar is-spaced has-background-transparent"
     role="navigation"
     aria-label="main navigation"
+    className="fixed py-12 w-full z-40 h-20 p-2"
+    style={{
+      backdropFilter: 'blur(2px)'
+    }}
   >
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <img src={hoangvvoLogo} alt={siteTitle} height="32" />
+    <div className="container mx-auto flex justify-between items-center">
+      <div className="flex content-start">
+        <Link to="/">
+          <div className="text-lg text-accents-700 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
+            <span className="font-light">Hoang V.</span>{' '}
+            <span className="font-bold">Vo</span>
+          </div>
         </Link>
-        <div
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
+      </div>
+      <div className="flex content-end">
+        <Link
+          className="text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
+          to="/blog/"
         >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-        </div>
+          Blog
+        </Link>
+        <Link
+          className="ml-2 text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
+          to="/portfolio/"
+        >
+          Portfolio
+        </Link>
       </div>
     </div>
   </nav>
 );
-
-Navbar.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Navbar.defaultProps = {
-  siteTitle: '',
-};
 
 export default Navbar;
