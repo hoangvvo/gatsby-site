@@ -24,12 +24,33 @@ module.exports = {
       none: 'none!important',
     },
     extend: {
+      fontFamily: {
+        sans: [
+          'BlinkMacSystemFont',
+          '-apple-system',
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+        ],
+      },
       fontSize: {
         '7xl': '5rem',
         '8xl': '6rem',
-        '9xl': '7rem'
-      }
-    }
+        '9xl': '7rem',
+      },
+      spacing: {
+        full: '100%',
+        '9/16': '56.25%',
+      },
+    },
   },
   plugins: [],
 };
