@@ -14,10 +14,10 @@
     "gatsby-plugin-no-sourcemaps": "^2.1.2",
     "gatsby-plugin-nprogress": "^2.1.18",
     "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-postcss": "^2.1.19",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-remark-autolink-headers": "^2.1.23",
@@ -34,7 +34,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "slash": "^3.0.0"
+    "slash": "^3.0.0",
+    "tailwindcss": "^1.2.0-canary.5"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

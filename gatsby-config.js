@@ -13,7 +13,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     'gatsby-plugin-sitemap',
@@ -36,7 +36,7 @@ module.exports = {
         background_color: '#ffc107',
         display: 'minimal-ui',
         theme_color: '#ffc107',
-        icon: 'src/images/icon.png',
+        icon: 'src/assets/images/icon.png',
       },
     },
     {
@@ -61,7 +61,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-nprogress',
@@ -72,11 +71,13 @@ module.exports = {
         showSpinner: false,
       },
     },
+    "gatsby-plugin-postcss",
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         printRejected: true,
-        develop: true,
+        develop: false,
+        tailwind: true,
         ignore: ['prism-atom-dark.css'],
       },
     },
@@ -91,7 +92,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-144899106-1',
+        trackingId: process.env.GA_TRACKING_ID,
         anonymize: true,
         respectDNT: true,
       },
