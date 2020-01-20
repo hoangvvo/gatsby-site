@@ -1,8 +1,8 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import Img from "gatsby-image";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const BlogPage = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
@@ -13,8 +13,8 @@ const BlogPage = ({ data }) => {
         title="Blog"
         description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities."
       />
-      <div className="p-2 container mx-auto py-32">
-        <h1 className="text-7xl font-extrabold text-stroke text-center">
+      <div className="container mx-auto px-2 py-32">
+        <h1 className="text-9xl font-extrabold text-stroke text-center">
           Blog
         </h1>
         <div className="mt-4 flex flex-wrap justify-center">
@@ -27,7 +27,7 @@ const BlogPage = ({ data }) => {
                       className="w-full h-full inset-0 object-cover"
                       fluid={post.image.fluid}
                       alt={post.title}
-                      style={{ position: "absolute" }}
+                      style={{ position: 'absolute' }}
                     />
                   </div>
                   <div className="p-2">
