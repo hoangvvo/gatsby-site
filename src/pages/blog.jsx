@@ -1,12 +1,8 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
-import My from '../components/my';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const BlogPage = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
@@ -17,58 +13,45 @@ const BlogPage = ({ data }) => {
         title="Blog"
         description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities."
       />
-      <section className="section hv-mt-3">
-        <div className="container">
-          <h1 className="title hv-section-title hv-animate-text-stroke">
-            Blog
-          </h1>
-          <p className="hv-section-subtitle-hashtags">
-            <span>#thought</span>
-            ,
-            {' '}
-            <span>
-              #express
-            </span>
-            ,
-            {' '}
-            <span>
-              #word
-            </span>
-          </p>
-          <div className="hv-blog-posts hv-mt-3">
-            <div className="columns is-multiline">
-              {blogPosts.map(({ node: post }) => (
-                <div
-                  className="hv-blog-post column is-6-tablet is-4-desktop"
-                  key={post.id}
-                >
-                  <Link to={`/blog/${post.slug}/`}>
+      <div className="p-2 container mx-auto py-32">
+        <h1 className="text-7xl font-extrabold text-stroke text-center">
+          Blog
+        </h1>
+        <div className="mt-4 flex flex-wrap justify-center">
+          {blogPosts.map(({ node: post }) => (
+            <div className="w-full md:w-1/2 lg:w-1/3 p-1" key={post.id}>
+              <Link to={`/blog/${post.slug}/`}>
+                <div className="shadow-md bg-accents-100 hover:shadow-lg transform hover:translate-y-2 transition-all ease-in-out duration-300 m-2 rounded-lg overflow-hidden">
+                  <div className="relative h-0 pb-9/16 overflow-hidden">
+                    <Img
+                      className="w-full h-full inset-0 object-cover"
+                      fluid={post.image.fluid}
+                      alt={post.title}
+                      style={{ position: "absolute" }}
+                    />
+                  </div>
+                  <div className="p-2">
                     <div>
-                      <figure className="image">
-                        <Img fluid={post.image.fluid} alt={post.title} />
-                      </figure>
+                      {post.category.map(cate => (
+                        <span
+                          className="rounded-full text-xs p-1 bg-accents-700 text-accents-100"
+                          key={cate.id}
+                        >
+                          {cate.name}
+                        </span>
+                      ))}
+                      <h3 className="inline ml-1 font-bold">{post.title}</h3>
                     </div>
-                    <div>
-                      <div className="hv-blog-post-head">
-                        <div className="hv-blog-post-category">
-                          {post.category.map(cate => (
-                            <span key={cate.id}>{cate.name}</span>
-                          ))}
-                        </div>
-                        <h3 className="hv-blog-post-title">{post.title}</h3>
-                      </div>
-                      <p className="hv-blog-post-description">
-                        {post.description.description}
-                      </p>
-                    </div>
-                  </Link>
+                    <p className="text-sm mt-1 text-accents-700">
+                      {post.description.description}
+                    </p>
+                  </div>
                 </div>
-              ))}
+              </Link>
             </div>
-          </div>
+          ))}
         </div>
-      </section>
-      <My />
+      </div>
     </Layout>
   );
 };
