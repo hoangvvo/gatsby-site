@@ -7,3 +7,6 @@ https://hoangvvo.netlify.com/* https://www.hoangvvo.com/:splat 301!
 /project/* /portfolio/ 301
 /honor/ /portfolio/ 301
 /privacy-policy/ / 410
+
+# Outdated links
+/about/* / 301
