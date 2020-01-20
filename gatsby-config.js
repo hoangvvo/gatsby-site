@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.hoangvvo.com',
     title: 'Hoang Vo',
-    description: 'Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!',
+    description:
+      'Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!',
     author: '@hoangvvo',
   },
   plugins: [
@@ -71,7 +72,7 @@ module.exports = {
         showSpinner: false,
       },
     },
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
