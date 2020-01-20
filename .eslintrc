@@ -5,11 +5,11 @@
       "node": true
   },
   "plugins": [
-    "react-hooks"
+    "prettier", "react-hooks"
   ],
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "parserOptions": {
-      "ecmaVersion": 2019,
+      "ecmaVersion": 2020,
       "sourceType": "module"
   },
   "rules": {
