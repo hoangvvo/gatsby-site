@@ -3,31 +3,21 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import notFoundSvg from '../images/undraw_page_not_found_su7k.svg';
-
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <section className="hero is-medium has-background-black-bis">
-      <div className="hero-body has-text-centered">
-        <div className="container">
-          <img
-            alt="Not found"
-            src={notFoundSvg}
-            style={{
-              maxWidth: '100%',
-              maxHeight: '40vh',
-              marginBottom: '2rem',
-            }}
-          />
-          <h1 className="title">404 NOT FOUND</h1>
-          <h2 className="subtitle">
-            This page does not exist... just like my girlfriend.
-          </h2>
-          <Link to="/">Go back</Link>
-        </div>
-      </div>
-    </section>
+    <div className="w-full text-center px-2 py-64 flex flex-col items-center justify-center">
+      <h1 className="text-6xl font-bold uppercase">Not found</h1>
+      <p className="py-1 text-lg text-accents-600 mb-8">
+        This page does not exist... just like my girlfriend.
+      </p>
+      <Link
+        className="transition-all ease-in-out duration-200 opacity-75 bg-accents-100 transform hover:translate-y-1 font-bold py-2 px-4 shadow-md rounded"
+        to="/"
+      >
+        Come back home
+      </Link>
+    </div>
   </Layout>
 );
 
