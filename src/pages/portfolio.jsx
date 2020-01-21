@@ -13,8 +13,8 @@ const PortfolioPage = ({ data }) => {
         description="I have been enjoying working on different projects during the past years to polish my skills in different fields. Check out my work!"
       />
 
-      <div className="container mx-auto px-2 py-32">
-        <h1 className="text-9xl font-extrabold text-stroke text-center">
+      <div className="container mx-auto px-6 py-32">
+        <h1 className="text-6xl sm:text-9xl font-extrabold text-stroke text-center">
           Portfolio
         </h1>
         <div className="mt-4 flex flex-wrap justify-center">

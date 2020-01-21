@@ -12,7 +12,7 @@ const IndexPage = () => (
       title="Home"
       description="Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!"
     />
-    <section className="container mx-auto flex flex-col justify-center py-32 min-h-screen">
+    <section className="container mx-auto flex flex-col justify-center px-6 py-32 min-h-screen">
       <h1 className="text-8xl font-hairline">
         Hi, I&apos;m <b className="font-black">Hoang</b>
       </h1>
@@ -23,7 +23,7 @@ const IndexPage = () => (
         <b className="font-black">your good friend</b>.
       </p>
     </section>
-    <section className="container mx-auto leading-relaxed py-16">
+    <section className="container mx-auto leading-relaxed px-6 py-16">
       <h2 className="text-7xl font-extrabold text-stroke text-center">
         I do quite lots of things
       </h2>
@@ -77,45 +77,45 @@ const IndexPage = () => (
         also do digital music composition from time to time using FL Studio.
       </p>
     </section>
-    <section className="container mx-auto leading-relaxed py-16">
+    <section className="container mx-auto leading-relaxed px-6 py-16">
       <h2 className="text-6xl font-extrabold text-stroke text-center">
         Come find me
       </h2>
-      <div className="flex justify-center mt-2">
+      <div className="flex flex-wrap justify-center mt-2">
         <a
           href="https://www.instagram.com/hoangvvo/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center rounded-full mx-1 py-4 px-8 opacity-75 hover:opacity-100 text-accents-700 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
+          className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 text-accents-700 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
         >
-          <IconInstagram className="mr-2" />
+          <IconInstagram className="m-1" />
           Instagram
         </a>
         <a
           href="https://twitter.com/hoangvvo"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center rounded-full mx-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
+          className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
         >
-          <IconTwitter className="mr-2" />
+          <IconTwitter className="m-1" />
           Twitter
         </a>
         <a
           href="https://github.com/hoangvvo"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center rounded-full mx-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
+          className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
         >
-          <IconGithub className="mr-2" />
+          <IconGithub className="m-1" />
           Github
         </a>
         <a
           href="https://linkedin.com/in/hoangvvo"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center rounded-full mx-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
+          className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
         >
-          <IconLinkedin className="mr-2" />
+          <IconLinkedin className="m-1" />
           LinkedIn
         </a>
       </div>

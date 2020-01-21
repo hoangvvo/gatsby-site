@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="text-accents-600 container mx-auto py-16 text-center">
+    <footer className="text-accents-600 w-full px-6 py-16 text-center">
       <p>
         Made with{' '}
         <span role="img" aria-label="Love">

@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <main className="max-w-full overflow-y-auto">{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   );

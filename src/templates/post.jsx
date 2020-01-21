@@ -14,7 +14,7 @@ const PostTemplate = ({ data }) => {
         type="article"
         image={image.file.url}
       />
-      <article className="px-2 py-32">
+      <article className="px-6 py-32">
         <header className="mx-auto max-w-2xl leading-relaxed">
           <h1 className="text-3xl">{title}</h1>
           <p className="py-3 text-accents-600">{description.description}</p>
@@ -24,7 +24,7 @@ const PostTemplate = ({ data }) => {
             fluid={image.fluid}
           />
         </header>
-        <section className="container mx-auto mx-auto max-w-2xl leading-loose py-4 my-2 content">
+        <section className="mx-auto mx-auto max-w-2xl leading-loose py-4 my-2 content">
           <div
             dangerouslySetInnerHTML={{
               __html: content.childMarkdownRemark.html,

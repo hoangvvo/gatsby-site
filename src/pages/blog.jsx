@@ -13,8 +13,8 @@ const BlogPage = ({ data }) => {
         title="Blog"
         description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities."
       />
-      <div className="container mx-auto px-2 py-32">
-        <h1 className="text-9xl font-extrabold text-stroke text-center">
+      <div className="container mx-auto px-6 py-32">
+        <h1 className="text-6xl sm:text-9xl font-extrabold text-stroke text-center">
           Blog
         </h1>
         <div className="mt-4 flex flex-wrap justify-center">
