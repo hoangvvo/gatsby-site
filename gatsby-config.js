@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: 'https://www.hoangvvo.com',
     title: 'Hoang Vo',
     description:
-      'Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!',
+      'Computer programmer, graphic desiger, photographer, and a good friend.',
     author: '@hoangvvo',
   },
   plugins: [

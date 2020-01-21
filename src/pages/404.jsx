@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="404 Not found" />
     <div className="w-full text-center px-2 py-64 flex flex-col items-center justify-center">
       <h1 className="text-6xl font-bold uppercase">Not found</h1>
       <p className="py-1 text-lg text-accents-600 mb-8">

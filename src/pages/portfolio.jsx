@@ -10,7 +10,7 @@ const PortfolioPage = ({ data }) => {
     <Layout>
       <SEO
         title="Portfolio"
-        description="I have been enjoying working on different projects during the past years to polish my skills in different fields. Check out my work!"
+        description="The work of my venture into different fields"
       />
 
       <div className="container mx-auto px-6 py-32">

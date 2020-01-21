@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
     <Layout>
       <SEO
         title="Blog"
-        description="My name is Hoang Vo. I have been working on various projects to polish my skills in Computer Programming, Graphic Design, Video Production, Photography, Leadership as well as taking part in community activities."
+        description="My blog posts on programming, adventure, and life."
       />
       <div className="container mx-auto px-6 py-32">
         <h1 className="text-6xl sm:text-9xl font-extrabold text-stroke text-center">
