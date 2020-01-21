@@ -1,41 +1,38 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
 
-import hoangvvoLogo from '../images/hoangvvo-logo.png';
-
-const Navbar = ({ siteTitle }) => (
-  <nav
-    className="navbar hv-navbar is-spaced has-background-transparent"
-    role="navigation"
-    aria-label="main navigation"
-  >
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <img src={hoangvvoLogo} alt={siteTitle} height="32" />
-        </Link>
-        <div
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
+export default function Navbar() {
+  return (
+    <nav
+      role="navigation"
+      aria-label="main navigation"
+      className="fixed py-12 w-full z-40 px-6"
+      style={{ backdropFilter: 'blur(2px)', backgroundColor: 'rgba(0,0,0,.4)' }}
+    >
+      <div className="container px-6 mx-auto flex flex-wrap justify-between items-center">
+        <div className="flex content-start">
+          <Link to="/">
+            <div className="text-lg text-accents-700 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
+              <span className="font-light">Hoang V.</span>{' '}
+              <span className="font-bold">Vo</span>
+            </div>
+          </Link>
+        </div>
+        <div className="flex content-end">
+          <Link
+            className="text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
+            to="/blog/"
+          >
+            Blog
+          </Link>
+          <Link
+            className="ml-4 text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
+            to="/portfolio/"
+          >
+            Portfolio
+          </Link>
         </div>
       </div>
-    </div>
-  </nav>
-);
-
-Navbar.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Navbar.defaultProps = {
-  siteTitle: '',
-};
-
-export default Navbar;
+    </nav>
+  );
+}
