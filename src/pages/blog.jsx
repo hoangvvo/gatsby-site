@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const BlogPage = ({ data }) => {
+export default function BlogPage({ data }) {
   const blogPosts = data.allContentfulBlogPost.edges;
 
   return (
@@ -54,9 +54,7 @@ const BlogPage = ({ data }) => {
       </div>
     </Layout>
   );
-};
-
-export default BlogPage;
+}
 
 export const query = graphql`
   query BlogPageQuery {

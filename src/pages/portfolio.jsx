@@ -4,8 +4,9 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const PortfolioPage = ({ data }) => {
+export default function PortfolioPage({ data }) {
   const portfolioItems = data.allContentfulPortfolio.edges;
+
   return (
     <Layout>
       <SEO
@@ -49,9 +50,7 @@ const PortfolioPage = ({ data }) => {
       </div>
     </Layout>
   );
-};
-
-export default PortfolioPage;
+}
 
 export const query = graphql`
   query PortfolioQuery {

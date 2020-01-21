@@ -1,11 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import Navbar from './navbar';
 import Footer from './footer';
 import '../assets/styles/index.css';
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,6 +22,4 @@ const Layout = ({ children }) => {
       <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   );
-};
-
-export default Layout;
+}

@@ -4,8 +4,9 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const PostTemplate = ({ data }) => {
+export default function PostTemplate({ data }) {
   const { title, content, image, description } = data.contentfulBlogPost;
+
   return (
     <Layout>
       <SEO
@@ -34,9 +35,7 @@ const PostTemplate = ({ data }) => {
       </article>
     </Layout>
   );
-};
-
-export default PostTemplate;
+}
 
 export const pageQuery = graphql`
   query($slug: String!) {
