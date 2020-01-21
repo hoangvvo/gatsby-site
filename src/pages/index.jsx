@@ -32,8 +32,8 @@ export default function IndexPage() {
         </p>
         <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
           I have been bricking phones since 2010, tackling code since 2012,
-          breaking the Web since 2015, shattering shutter since 2016, toying
-          with microcontrollers since 2017.
+          breaking the Web since 2015, shattering camera shutter since 2016, and
+          being a good human being since forever.
         </p>
         <h3 className="text-5xl font-extrabold text-stroke mt-8 text-center">
           The Web
