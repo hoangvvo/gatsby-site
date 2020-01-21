@@ -63,15 +63,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        // Setting a color is optional.
-        color: '#ffc107',
-        // Disable the loading spinner.
-        showSpinner: false,
-      },
-    },
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-purgecss',
