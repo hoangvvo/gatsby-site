@@ -9,6 +9,7 @@ function SEO({
   title,
   type = 'website',
   image = '',
+  titleTemplate,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -32,7 +33,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={titleTemplate || `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: 'description',

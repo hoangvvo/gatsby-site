@@ -8,10 +8,7 @@ import IconLinkedin from '../assets/svgs/linkedin.svg';
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Home"
-      description="Hoang is a curious learner, a practical thinker, a tech-savvy person, and a good friend. He is willing to meet you!"
-    />
+    <SEO title="Hoang Vo" titleTemplate="%s" />
     <section className="container mx-auto flex flex-col justify-center px-6 py-32 min-h-screen">
       <h1 className="text-8xl font-hairline">
         Hi, I&apos;m <b className="font-black">Hoang</b>
