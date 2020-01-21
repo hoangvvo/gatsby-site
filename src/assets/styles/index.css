@@ -9,6 +9,8 @@
 :root {
   --background: #000;
   --foreground: #fff;
+  --primary: #ffc107;
+  --secondary: #fa709a;
   --accents-100: #111;
   --accents-200: #222;
   --accents-300: #333;
@@ -81,6 +83,13 @@ body {
   }
   h4 {
     @apply text-lg;
+  }
+  a {
+    @apply transition-colors ease-in-out duration-75;
+    color: var(--secondary);
+    &:hover {
+      color: var(--primary);
+    }
   }
   p, .gatsby-highlight {
     @apply mb-4 transition-all ease-in-out duration-200 opacity-75;
