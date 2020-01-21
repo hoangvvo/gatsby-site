@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import IconGithub from '../assets/svgs/github.svg';
 import IconInstagram from '../assets/svgs/instagram.svg';
 import IconTwitter from '../assets/svgs/twitter.svg';
+import IconLinkedin from '../assets/svgs/linkedin.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -107,6 +108,15 @@ const IndexPage = () => (
         >
           <IconGithub className="mr-2" />
           Github
+        </a>
+        <a
+          href="https://linkedin.com/in/hoangvvo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center rounded-full mx-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
+        >
+          <IconLinkedin className="mr-2" />
+          LinkedIn
         </a>
       </div>
     </section>
