@@ -1,4 +1,6 @@
 {
+  "trailingSlash": true,
+  "cleanUrls": true,
   "build": {
     "env": {
       "CONTENTFUL_ACCESS_TOKEN": "@contentful-access-token",

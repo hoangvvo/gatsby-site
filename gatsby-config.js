@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.hoangvvo.com',
+    siteUrl: 'https://hoangvvo.com',
     title: 'Hoang Vo',
     description:
       'Computer programmer, graphic desiger, photographer, and a good friend.',
@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://www.hoangvvo.com/',
+        siteUrl: 'https://hoangvvo.com/',
         stripQueryString: true,
       },
     },
