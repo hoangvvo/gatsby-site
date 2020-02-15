@@ -35,7 +35,7 @@ export default function PortfolioPage({ data }) {
                 />
               )}
               <div className="mt-2">
-                <span className="inline-block align-middle rounded-full px-2 bg-accents-700 text-accents-100">
+                <span className="inline-block align-middle bg-accents-700 text-accents-100 rounded-full px-2">
                   {item.category}
                 </span>{' '}
                 <h3
@@ -51,6 +51,16 @@ export default function PortfolioPage({ data }) {
               <p className="text-accents-700 leading-relaxed ">
                 {item.description.description}
               </p>
+              <ul>
+                {item.tags.map(tag => (
+                  <li
+                    key={`tag:${tag}`}
+                    className="font-mono inline-block underline-bg theme-gradient opacity-75 text-xs mr-1"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,6 +96,7 @@ export const query = graphql`
             }
           }
           category
+          tags
           link
         }
       }
