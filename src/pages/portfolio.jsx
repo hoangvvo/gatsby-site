@@ -61,7 +61,6 @@ export const query = graphql`
         node {
           id
           name
-          slug
           description {
             description
           }
