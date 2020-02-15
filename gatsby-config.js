@@ -82,11 +82,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-fathom',
       options: {
-        trackingId: process.env.GA_TRACKING_ID,
-        anonymize: true,
-        respectDNT: true,
+        siteId: process.env.FATHOM_SITE_ID,
       },
     },
   ],
