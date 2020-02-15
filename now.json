@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "CONTENTFUL_ACCESS_TOKEN": "@contentful-access-token",
+      "CONTENTFUL_SPACE_ID": "@contentful-space-id",
+      "FATHOM_SITE_ID": "@fathom-site-id"
+    }
+  }
+}
