@@ -1,10 +1,11 @@
 /* eslint-disable react/no-danger */
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+const React = require('react');
 
-export function onRenderBody({ setPostBodyComponents }, pluginOptions) {
-  if (process.env.NODE_ENV !== 'production' || !pluginOptions.siteId) return;
-  setPostBodyComponents([
+exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
+  if (process.env.NODE_ENV !== 'production' || !pluginOptions.siteId)
+    return null;
+  return setPostBodyComponents([
     <script
       key="fathom-analytics"
       dangerouslySetInnerHTML={{
@@ -24,4 +25,4 @@ export function onRenderBody({ setPostBodyComponents }, pluginOptions) {
       }}
     />,
   ]);
-}
+};
