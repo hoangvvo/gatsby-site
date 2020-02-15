@@ -32,6 +32,7 @@ export default function PortfolioPage({ data }) {
                   alt="No logo"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   className="theme-gradient overflow rounded-lg w-full"
+                  style={{ filter: 'grayscale(1) brightness(0.5)' }}
                 />
               )}
               <div className="mt-2">
