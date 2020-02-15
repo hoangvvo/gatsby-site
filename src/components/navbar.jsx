@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav
       role="navigation"
       aria-label="main navigation"
-      className="fixed py-12 w-full z-40 px-6"
+      className="fixed py-4 w-full z-40 px-6"
       style={{ backdropFilter: 'blur(2px)', backgroundColor: 'rgba(0,0,0,.4)' }}
     >
       <div className="container px-6 mx-auto flex flex-wrap justify-between items-center">

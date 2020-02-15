@@ -22,10 +22,10 @@ export default function IndexPage() {
         </p>
       </section>
       <section className="container mx-auto leading-relaxed px-6 py-16">
-        <h2 className="text-7xl font-extrabold text-stroke text-center">
+        <h2 className="text-7xl font-extrabold text-stroke leading-none text-center">
           I do quite lots of things
         </h2>
-        <p className="opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
           I am an average guy who does <b>Computer Programming</b>,{' '}
           <b>Graphic Design</b>, <b>Photography</b>, and a bunch of other wacky
           things.
@@ -35,7 +35,7 @@ export default function IndexPage() {
           breaking the Web since 2015, shattering camera shutter since 2016, and
           being a good human being since forever.
         </p>
-        <h3 className="text-5xl font-extrabold text-stroke mt-8 text-center">
+        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
           The Web
         </h3>
         <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
@@ -49,7 +49,7 @@ export default function IndexPage() {
           and <b>Container</b>. I am serious about making the Web faster, one
           millisecond of latency at a time.
         </p>
-        <h3 className="text-5xl font-extrabold text-stroke mt-8 text-center">
+        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
           The Technology
         </h3>
         <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
@@ -62,7 +62,7 @@ export default function IndexPage() {
           need to step up in their efforts to tackle their users&apos; privacy
           issues while minimizing their own roles in such issues.
         </p>
-        <h3 className="text-5xl font-extrabold text-stroke mt-8 text-center">
+        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
           The Art
         </h3>
         <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
@@ -76,7 +76,7 @@ export default function IndexPage() {
         </p>
       </section>
       <section className="container mx-auto leading-relaxed px-6 py-16">
-        <h2 className="text-6xl font-extrabold text-stroke text-center">
+        <h2 className="text-6xl font-extrabold text-stroke leading-none text-center">
           Come find me
         </h2>
         <div className="flex flex-wrap justify-center mt-2">
