@@ -43,9 +43,12 @@ export default function PortfolioPage({ data }) {
                   style={{ color: item.color }}
                 >
                   {item.name}
-                </h3>
+                </h3>{' '}
               </div>
-              <p className="mt-1 text-accents-700 leading-relaxed ">
+              <p className="mt-1 align-middle text-accents-600 text-sm">
+                {item.startDate} - {item.isOngoing ? 'present' : item.endDate}
+              </p>
+              <p className="text-accents-700 leading-relaxed ">
                 {item.description.description}
               </p>
               <a
@@ -66,11 +69,14 @@ export default function PortfolioPage({ data }) {
 
 export const query = graphql`
   query PortfolioQuery {
-    allContentfulPortfolio {
+    allContentfulPortfolio(sort: { fields: [startDate], order: DESC }) {
       edges {
         node {
           id
           name
+          isOngoing
+          startDate(formatString: "MMM YYYY")
+          endDate(formatString: "MMM YYYY")
           description {
             description
           }
