@@ -20,22 +20,32 @@ export default function PortfolioPage({ data }) {
         </h1>
         <div className="mt-4 flex flex-wrap justify-center">
           {portfolioItems.map(({ node: item }) => (
-            <div key={item.id} className="w-full md:w-1/2 lg:w-1/3 p-1">
-              <Img
-                className="overflow-hidden rounded-lg"
-                fluid={item.image.fluid}
-                alt={item.title}
-              />
-              <h3
-                className="mt-2 text-4xl font-bold font-black leading-none text-accents-900"
-                style={{ color: item.color }}
-              >
-                {item.name}
-              </h3>
-              <span className="inline-block mt-2 rounded-full px-2 bg-accents-700 text-accents-100">
-                {item.category}
-              </span>
-              <p className="mt-4 text-accents-700 leading-relaxed ">
+            <div key={item.id} className="w-full md:w-1/2 lg:w-1/3 p-4">
+              {item.image ? (
+                <Img
+                  className="overflow-hidden rounded-lg"
+                  fluid={item.image.fluid}
+                  alt={item.title}
+                />
+              ) : (
+                <img
+                  alt="No logo"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  className="theme-gradient overflow rounded-lg w-full"
+                />
+              )}
+              <div className="mt-2">
+                <span className="inline-block align-middle rounded-full px-2 bg-accents-700 text-accents-100">
+                  {item.category}
+                </span>{' '}
+                <h3
+                  className="inline align-middle text-3xl font-bold font-black leading-none text-accents-900"
+                  style={{ color: item.color }}
+                >
+                  {item.name}
+                </h3>
+              </div>
+              <p className="mt-1 text-accents-700 leading-relaxed ">
                 {item.description.description}
               </p>
               <a
