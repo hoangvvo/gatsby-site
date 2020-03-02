@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import IconGithub from '../assets/svgs/github.svg';
-import IconInstagram from '../assets/svgs/instagram.svg';
 import IconTwitter from '../assets/svgs/twitter.svg';
 import IconLinkedin from '../assets/svgs/linkedin.svg';
 
@@ -67,7 +66,7 @@ export default function IndexPage() {
         </h3>
         <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
           I am an enthusiastic photographer, loyal to the Sony ecosystem. I
-          mostly do portrait and landscap, but I also play around with photo
+          mostly do portrait and landscape, but I also play around with photo
           manipulation.
         </p>
         <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
@@ -80,15 +79,6 @@ export default function IndexPage() {
           Come find me
         </h2>
         <div className="flex flex-wrap justify-center mt-2">
-          <a
-            href="https://www.instagram.com/hoangvvo/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 text-accents-700 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
-          >
-            <IconInstagram className="m-1" />
-            Instagram
-          </a>
           <a
             href="https://twitter.com/hoangvvo"
             target="_blank"

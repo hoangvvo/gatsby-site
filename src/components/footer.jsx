@@ -20,15 +20,6 @@ export default function Footer() {
       </p>
       <div>
         <a
-          href="https://www.instagram.com/hoangvvo/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accents-700"
-        >
-          Instagram
-        </a>
-        {' · '}
-        <a
           href="https://twitter.com/hoangvvo"
           target="_blank"
           rel="noopener noreferrer"
