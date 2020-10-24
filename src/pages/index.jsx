@@ -6,6 +6,30 @@ import IconGithub from '../assets/svgs/github.svg';
 import IconTwitter from '../assets/svgs/twitter.svg';
 import IconLinkedin from '../assets/svgs/linkedin.svg';
 
+function SectionTitle({ children }) {
+  return (
+    <h2 className="text-7xl font-extrabold text-stroke leading-none text-center">
+      {children}
+    </h2>
+  );
+}
+
+function SectionDoTitle({ children }) {
+  return (
+    <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
+      {children}
+    </h3>
+  );
+}
+
+function SectionDoParagraph({ children }) {
+  return (
+    <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+      {children}
+    </p>
+  );
+}
+
 export default function IndexPage() {
   const { site } = useStaticQuery(
     graphql`
@@ -45,62 +69,52 @@ export default function IndexPage() {
         </p>
       </section>
       <section className="container mx-auto leading-relaxed px-6 py-16">
-        <h2 className="text-7xl font-extrabold text-stroke leading-none text-center">
-          I do quite lots of things
-        </h2>
-        <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        <SectionTitle>I do quite lots of things</SectionTitle>
+        <SectionDoParagraph>
           I am an average guy who does <b>Computer Programming</b>,{' '}
           <b>Graphic Design</b>, <b>Photography</b>, and a bunch of other wacky
           things.
-        </p>
-        <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoParagraph>
           I have been bricking phones since 2010, tackling code since 2012,
           breaking the Web since 2015, shattering camera shutter since 2016, and
           being a good human being since forever.
-        </p>
-        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
-          The Web
-        </h3>
-        <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoTitle>The Web</SectionDoTitle>
+        <SectionDoParagraph>
           I am a <b>Javascript</b> developer, comfortable with <b>React</b>{' '}
           frameworks such as <b>Gatsby.js</b> and <b>Next.js</b>. At the same
           time, I am building apps with <b>Node.js</b> and powering APIs with{' '}
           <b>GraphQL</b>.
-        </p>
-        <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoParagraph>
           I am obsessed with the latest technologies such as <b>Serverless</b>{' '}
           and <b>Container</b>. I am serious about making the Web faster, one
           millisecond of latency at a time.
-        </p>
-        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
-          The Technology
-        </h3>
-        <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoTitle>The Technology</SectionDoTitle>
+        <SectionDoParagraph>
           I am interested in how we can improve human&apos;s behaviors and
           strengthen the integrity of the IoT.
-        </p>
-        <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoParagraph>
           I advocate for better <b>privacy</b> in the digital ages. Companies
           need to step up in their efforts to tackle their users&apos; privacy
           issues while minimizing their own roles in such issues.
-        </p>
-        <h3 className="text-5xl font-extrabold text-stroke leading-none mt-8 text-center">
-          The Art
-        </h3>
-        <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoTitle>The Art</SectionDoTitle>
+        <SectionDoParagraph>
           I am an enthusiastic photographer, loyal to the Sony ecosystem. I
           mostly do portrait and landscape, but I also play around with photo
           manipulation.
-        </p>
-        <p className="mt-2 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
+        </SectionDoParagraph>
+        <SectionDoParagraph>
           Back in the day, I was a graphic designer for local organizations. I
           also do digital music composition from time to time using FL Studio.
-        </p>
+        </SectionDoParagraph>
       </section>
       <section className="container mx-auto leading-relaxed px-6 py-16">
-        <h2 className="text-6xl font-extrabold text-stroke leading-none text-center">
-          Come find me
-        </h2>
+        <SectionTitle>Come find me</SectionTitle>
         <div className="flex flex-wrap justify-center mt-2">
           <a
             href={`https://twitter.com/${site.siteMetadata.twitter.username}`}
