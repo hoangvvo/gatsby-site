@@ -52,8 +52,7 @@ export default function IndexPage() {
           The Technology
         </h3>
         <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
-          I am a big admirer of <b>A.I</b> and <b>Blockchain</b> technology: I
-          am interested in how we can improve human&apos;s behaviors and
+          I am interested in how we can improve human&apos;s behaviors and
           strengthen the integrity of the IoT.
         </p>
         <p className="mt-4 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out text-2xl">
