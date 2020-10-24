@@ -13,8 +13,7 @@ export default function IndexPage() {
         site {
           siteMetadata {
             title
-            description
-            author
+            fullName
             twitter {
               username
             }
@@ -35,7 +34,8 @@ export default function IndexPage() {
       <SEO title={site.siteMetadata.title} titleTemplate="%s" />
       <section className="container mx-auto flex flex-col justify-center px-6 py-32 min-h-screen">
         <h1 className="text-8xl font-hairline leading-tight">
-          Hi, I&apos;m <b className="font-black">{site.siteMetadata.author}</b>
+          Hi, I&apos;m{' '}
+          <b className="font-black">{site.siteMetadata.fullName}</b>
         </h1>
         <p className="text-5xl font-hairline leading-tight opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
           I am a <b className="font-black">curious learner</b>, a{' '}

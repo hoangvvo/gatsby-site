@@ -32,7 +32,7 @@ export default function BlogPage({ data }) {
                   </div>
                   <div className="p-2">
                     <div>
-                      {post.category.map(cate => (
+                      {post.category.map((cate) => (
                         <span
                           className="rounded-full text-xs p-1 bg-accents-700 text-accents-100"
                           key={cate.id}

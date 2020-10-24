@@ -53,7 +53,7 @@ export default function PortfolioPage({ data }) {
                 {item.description.description}
               </p>
               <ul>
-                {item.tags.map(tag => (
+                {item.tags.map((tag) => (
                   <li
                     key={`tag:${tag}`}
                     className="font-mono inline-block underline-bg theme-gradient opacity-75 text-xs mr-1"

@@ -8,8 +8,7 @@ export default function Footer() {
         site {
           siteMetadata {
             title
-            description
-            author
+            fullName
             twitter {
               username
             }
@@ -70,7 +69,7 @@ export default function Footer() {
         </a>
       </div>
       <small>
-        © 2017 <Link to="/">{site.siteMetadata.author}</Link>
+        © 2017 <Link to="/">{site.siteMetadata.fullName}</Link>
       </small>
     </footer>
   );

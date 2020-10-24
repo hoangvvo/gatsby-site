@@ -17,12 +17,12 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   )
-    .then(result => {
+    .then((result) => {
       if (result.errors) {
         throw new Error(result.errors);
       }
       const blogPostTemplate = path.resolve('./src/templates/post.jsx');
-      result.data.allContentfulBlogPost.edges.forEach(edge => {
+      result.data.allContentfulBlogPost.edges.forEach((edge) => {
         createPage({
           path: `/blog/${edge.node.slug}/`,
           component: slash(blogPostTemplate),
@@ -33,7 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
     })
-    .catch(error => {
+    .catch((error) => {
       throw new Error(error);
     });
 };

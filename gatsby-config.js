@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://old.hoangvvo.com',
     title: 'Hoang Vo',
+    fullName: 'Hoang Vo',
     description:
       'Computer programmer, graphic desiger, photographer, and a good friend.',
     author: '@hoangvvo',
