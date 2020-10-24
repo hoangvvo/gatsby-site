@@ -4,6 +4,7 @@
 
 @tailwind utilities;
 
+/* purgecss start ignore */
 @import "./prism-atom-dark.css";
 
 :root {
@@ -116,3 +117,4 @@ body {
     @apply table-auto text-center w-full my-2 shadow-md;
   }
 }
+/* purgecss end ignore */

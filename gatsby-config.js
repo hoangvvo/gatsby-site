@@ -64,15 +64,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-postcss',
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        printRejected: true,
-        develop: false,
-        tailwind: true,
-        ignore: ['prism-atom-dark.css'],
-      },
-    },
     'gatsby-plugin-no-sourcemaps',
     {
       resolve: 'gatsby-source-contentful',

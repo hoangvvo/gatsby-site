@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ['./src/**/*.jsx'],
   theme: {
     colors: {
       background: 'var(--background)',
