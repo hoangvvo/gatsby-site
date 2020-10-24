@@ -8,7 +8,7 @@ const NewSiteBanner = () => {
   const [isHidden, setIsHidden] = React.useState(false);
   const pathname =
     typeof window !== 'undefined' ? window.location.pathname : '';
-  if (!process.env.NEW_SITE_URL) return null;
+  if (!process.env.GATSBY_NEW_SITE_URL) return null;
   return (
     <div
       className="fixed bottom-0 w-full left-0 p-2 rounded-t-lg text-sm"
@@ -22,7 +22,7 @@ const NewSiteBanner = () => {
       </p>
       <p className="leading-none">
         <a
-          href={`${process.env.NEW_SITE_URL}${pathname}`}
+          href={`${process.env.GATSBY_NEW_SITE_URL}${pathname}`}
           className="bg-foreground hover:bg-accents-800 rounded-full px-2 py-1 font-bold"
           style={{ color: 'var(--secondary)' }}
         >

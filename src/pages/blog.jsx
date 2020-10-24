@@ -20,7 +20,7 @@ export default function BlogPage({ data }) {
         <div className="mt-4 flex flex-wrap justify-center">
           {blogPosts.map(({ node: post }) => (
             <div className="w-full md:w-1/2 lg:w-1/3 p-1" key={post.id}>
-              <Link to={`/blog/${post.slug}/`}>
+              <Link to={`/blog/${post.slug}`}>
                 <div className="shadow-md bg-accents-100 hover:shadow-lg transform hover:translate-y-2 transition-all ease-in-out duration-300 m-2 rounded-lg overflow-hidden">
                   <div className="relative h-0 pb-9/16 overflow-hidden">
                     <Img

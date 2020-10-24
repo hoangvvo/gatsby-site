@@ -21,13 +21,13 @@ export default function Navbar() {
         <div className="flex content-end">
           <Link
             className="text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
-            to="/blog/"
+            to="/blog"
           >
             Blog
           </Link>
           <Link
             className="ml-4 text-2xl font-bold underline-bg theme-gradient opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out"
-            to="/portfolio/"
+            to="/portfolio"
           >
             Portfolio
           </Link>

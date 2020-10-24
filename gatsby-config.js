@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://hoangvvo.com',
+    siteUrl: 'https://old.hoangvvo.com',
     title: 'Hoang Vo',
     description:
       'Computer programmer, graphic desiger, photographer, and a good friend.',
@@ -81,6 +81,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    'gatsby-plugin-remove-trailing-slashes',
     // {
     //   resolve: 'gatsby-plugin-fathom',
     //   options: {
