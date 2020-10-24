@@ -10,7 +10,7 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Hoang Vo" titleTemplate="%s" />
       <section className="container mx-auto flex flex-col justify-center px-6 py-32 min-h-screen">
-        <h1 className="text-8xl font-hairline">
+        <h1 className="text-8xl font-hairline leading-tight">
           Hi, I&apos;m <b className="font-black">Hoang</b>
         </h1>
         <p className="text-5xl font-hairline leading-tight opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">

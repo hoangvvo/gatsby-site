@@ -81,11 +81,11 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: 'gatsby-plugin-fathom',
-      options: {
-        siteId: process.env.FATHOM_SITE_ID,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-fathom',
+    //   options: {
+    //     siteId: process.env.FATHOM_SITE_ID,
+    //   },
+    // },
   ],
 };
