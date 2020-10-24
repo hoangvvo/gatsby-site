@@ -1,7 +1,30 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 export default function Footer() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+            twitter {
+              username
+            }
+            github {
+              username
+            }
+            linkedin {
+              username
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <footer className="text-accents-600 w-full px-6 py-16 text-center">
       <p>
@@ -20,7 +43,7 @@ export default function Footer() {
       </p>
       <div>
         <a
-          href="https://twitter.com/hoangvvo"
+          href={`https://twitter.com/${site.siteMetadata.twitter.username}`}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-accents-700"
@@ -29,7 +52,7 @@ export default function Footer() {
         </a>
         {' · '}
         <a
-          href="https://github.com/hoangvvo"
+          href={`https://github.com/${site.siteMetadata.github.username}`}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-accents-700"
@@ -38,7 +61,7 @@ export default function Footer() {
         </a>
         {' · '}
         <a
-          href="https://linkedin.com/in/hoangvvo"
+          href={`https://linkedin.com/in/${site.siteMetadata.linkedin.username}`}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-accents-700"
@@ -47,7 +70,7 @@ export default function Footer() {
         </a>
       </div>
       <small>
-        © 2017 <Link to="/">Hoang Vo</Link>
+        © 2017 <Link to="/">{site.siteMetadata.author}</Link>
       </small>
     </footer>
   );

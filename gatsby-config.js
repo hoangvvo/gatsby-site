@@ -7,6 +7,15 @@ module.exports = {
     description:
       'Computer programmer, graphic desiger, photographer, and a good friend.',
     author: '@hoangvvo',
+    twitter: {
+      username: 'hoangvvo',
+    },
+    github: {
+      username: 'hoangvvo',
+    },
+    linkedin: {
+      username: 'hoangvvo',
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',

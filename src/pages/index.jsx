@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import IconGithub from '../assets/svgs/github.svg';
@@ -6,12 +7,35 @@ import IconTwitter from '../assets/svgs/twitter.svg';
 import IconLinkedin from '../assets/svgs/linkedin.svg';
 
 export default function IndexPage() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+            twitter {
+              username
+            }
+            github {
+              username
+            }
+            linkedin {
+              username
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <Layout>
-      <SEO title="Hoang Vo" titleTemplate="%s" />
+      <SEO title={site.siteMetadata.title} titleTemplate="%s" />
       <section className="container mx-auto flex flex-col justify-center px-6 py-32 min-h-screen">
         <h1 className="text-8xl font-hairline leading-tight">
-          Hi, I&apos;m <b className="font-black">Hoang</b>
+          Hi, I&apos;m <b className="font-black">{site.siteMetadata.author}</b>
         </h1>
         <p className="text-5xl font-hairline leading-tight opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
           I am a <b className="font-black">curious learner</b>, a{' '}
@@ -79,7 +103,7 @@ export default function IndexPage() {
         </h2>
         <div className="flex flex-wrap justify-center mt-2">
           <a
-            href="https://twitter.com/hoangvvo"
+            href={`https://twitter.com/${site.siteMetadata.twitter.username}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
@@ -88,7 +112,7 @@ export default function IndexPage() {
             Twitter
           </a>
           <a
-            href="https://github.com/hoangvvo"
+            href={`https://github.com/${site.siteMetadata.github.username}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"
@@ -97,7 +121,7 @@ export default function IndexPage() {
             Github
           </a>
           <a
-            href="https://linkedin.com/in/hoangvvo"
+            href={`https://linkedin.com/in/${site.siteMetadata.linkedin.username}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center rounded-full m-1 py-4 px-8 opacity-75 hover:opacity-100 shadow-md hover:shadow-lg transform hover:translate-y-1 transition-all ease-in-out duration-300"

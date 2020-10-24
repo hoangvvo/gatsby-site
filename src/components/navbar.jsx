@@ -1,7 +1,18 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 export default function Navbar() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
   return (
     <nav
       role="navigation"
@@ -13,8 +24,7 @@ export default function Navbar() {
         <div className="flex content-start">
           <Link to="/">
             <div className="text-lg text-accents-700 opacity-75 hover:opacity-100 transition-opacity duration-100 ease-out">
-              <span className="font-light">Hoang V.</span>{' '}
-              <span className="font-bold">Vo</span>
+              {site.siteMetadata.title}
             </div>
           </Link>
         </div>

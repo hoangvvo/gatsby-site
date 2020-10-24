@@ -1,7 +1,7 @@
 {
-  "name": "hoangvvo-gatsby-site",
+  "name": "gatsby-site",
   "private": true,
-  "description": "Gatsby powered personal website at hoangvvo.com",
+  "description": "Gatsby powered personal website + blog",
   "version": "2.0.0",
   "author": "Hoang Vo",
   "dependencies": {
@@ -57,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vvhoang/hoangvvo-gatsby-site"
+    "url": "https://github.com/hoangvvo/gatsby-site"
   },
   "bugs": {
-    "url": "https://github.com/vvhoang/hoangvvo-gatsby-site/issues"
+    "url": "https://github.com/hoangvvo/gatsby-site/issues"
   }
 }
